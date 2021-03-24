@@ -1,5 +1,7 @@
 //--module-path "\path\to\javafx-sdk-15.0.1\lib" --add-modules javafx.controls,javafx.fxml
 package application;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -40,6 +42,7 @@ public class Main extends Application {
         MenuItem itemSpaceInvaders = new MenuItem("SpaceInvaders");
         itemSpaceInvaders.setOnMouseClicked(event -> System.exit(0));
         
+        
         MenuItem itemPong = new MenuItem("Pong");
         itemPong.setOnMouseClicked(event -> System.exit(0));
         
@@ -47,7 +50,7 @@ public class Main extends Application {
         itemSnake.setOnMouseClicked(event -> System.exit(0));
         
         MenuItem itemAdventure = new MenuItem("Adventure");
-        itemAdventure.setOnMouseClicked(event -> System.exit(0));
+        itemAdventure.setOnMouseClicked(event -> System.class<adventureGame = new adventureGame()>
         
         MenuItem itemExit = new MenuItem("EXIT");
         itemExit.setOnMouseClicked(event -> System.exit(0));
@@ -145,6 +148,11 @@ public class Main extends Application {
                 bg.setFill(gradient);
             });
         }
+
+		public void setActionListner(ActionListener actionListener) {
+			// TODO Auto-generated method stub
+			
+		}
     }
 
     public static void main(String[] args) {
