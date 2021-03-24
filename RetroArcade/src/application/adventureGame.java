@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 import javafx.scene.Parent;
+import javafx.scene.layout.Pane;
 
 import javax.swing.JLabel;
 
@@ -71,6 +72,7 @@ public class adventureGame {
 
 	}
 
+	
 	public void createGameScreen() {
 
 		titleNamePanel.setVisible(false);
@@ -477,10 +479,7 @@ public class adventureGame {
 			}
 		}
 	}
-	public Parent getRootPane() {
-		// TODO Auto-generated method stub
-		return root;
-	}
+	
 }
 
 

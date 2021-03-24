@@ -49,7 +49,7 @@ public class Main extends Application {
         itemSnake.setOnMouseClicked(event -> System.exit(0));
         
         MenuItem itemAdventure = new MenuItem("Adventure");
-        itemAdventure.setOnMouseClicked(event -> { adventureGame game = new adventureGame(); itemAdventure.getScene().setRoot(game.getRootPane());
+        itemAdventure.setOnMouseClicked(event -> { adventureGame game = new adventureGame(); itemAdventure.getScene().setRoot(root);
         });
         
         MenuItem itemExit = new MenuItem("EXIT");
