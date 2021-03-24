@@ -37,14 +37,27 @@ public class Main extends Application {
         title.setTranslateX(75);
         title.setTranslateY(200);
 
+        MenuItem itemSpaceInvaders = new MenuItem("SpaceInvaders");
+        itemSpaceInvaders.setOnMouseClicked(event -> System.exit(0));
+        
+        MenuItem itemPong = new MenuItem("Pong");
+        itemPong.setOnMouseClicked(event -> System.exit(0));
+        
+        MenuItem itemSnake = new MenuItem("Snake");
+        itemSnake.setOnMouseClicked(event -> System.exit(0));
+        
+        MenuItem itemAdventure = new MenuItem("Adventure");
+        itemAdventure.setOnMouseClicked(event -> System.exit(0));
+        
         MenuItem itemExit = new MenuItem("EXIT");
         itemExit.setOnMouseClicked(event -> System.exit(0));
+        
 
         MenuBox menu = new MenuBox(
-                new MenuItem("Space Invaders"),
-                new MenuItem("Snake"),
-                new MenuItem("Pong"),
-                new MenuItem("JOIN CO-OP"),
+                itemSpaceInvaders,
+                itemPong,
+                itemSnake,
+                itemAdventure,
                 itemExit);
         menu.setTranslateX(100);
         menu.setTranslateY(300);
